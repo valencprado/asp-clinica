@@ -39,7 +39,8 @@ namespace asp_clinica.Controllers
         }
         public ActionResult About()
         {
-            if (Session["usu"] != null) { 
+            if (Session["usu"] != null && Session["tipo"].ToString() == "1")
+            { 
             ViewBag.Message = "Your application description page.";
             return View();
             }
@@ -52,7 +53,7 @@ namespace asp_clinica.Controllers
 
         public ActionResult Contact()
         {
-            if (Session["usu"] != null)
+            if (Session["usu"] != null && Session["tipo"].ToString() == "1")
             {
                 ViewBag.Message = "Your application description page.";
                 return View();
