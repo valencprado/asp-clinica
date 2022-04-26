@@ -1,7 +1,5 @@
-﻿using System.Web.Mvc;
-using asp_clinica.Models;
+﻿using asp_clinica.Models;
 using asp_clinica.NewFolder1;
-using System.Web.Security;
 
 namespace asp_clinica.Controllers
 {
@@ -63,6 +61,13 @@ namespace asp_clinica.Controllers
 
                 return RedirectToAction("Erro", "Home");
             }
+
+        }
+        public ActionResult Logout()
+        {
+            Session["usu"] = null;
+            Session["tipo"] = null;
+            return RedirectToAction("Index", "Home");
         }
     }
 }
