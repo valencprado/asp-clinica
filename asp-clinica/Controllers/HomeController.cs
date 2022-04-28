@@ -11,7 +11,7 @@ using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace projetoClinica.Controllers
+namespace asp_clinica.Controllers
 {
     public class HomeController : Controller
     {
@@ -165,10 +165,20 @@ namespace projetoClinica.Controllers
         public ActionResult CadLogin(ModelLogin cmLogin) 
         {
             carregaTipoUsu();
-            cmLogin.codTipoUsuario = Request["tipoUsu"];
-            acL.inserirLogin(cmLogin);
+            if (cmLogin.senha == cmLogin.confirmaSenha)
+            { 
+
+                cmLogin.codTipoUsuario = Request["tipoUsu"];
+                acL.inserirLogin(cmLogin);
+                Response.Write("<script>alert('Cadastro efetuado com sucesso!')</script>");
+            }
+            else
+            {
+                Response.Write("<script>alert('As senhas não estão iguais.')</script>");
+            }
             return View();
         }
 
+        
     }
 }
