@@ -5,7 +5,7 @@ namespace asp_clinica.Dados
 {
     public class conexao
     {
-        MySqlConnection cn = new MySqlConnection("Server=localhost; DataBase=bdClinica; User=root;pwd=Figure.09");
+        MySqlConnection cn = new MySqlConnection("Server=localhost; DataBase=bdClinica; User=root;pwd=12345678");
         public static string msg;
 
         public MySqlConnection MyConectarBD()
