@@ -2,7 +2,7 @@
 using MySql.Data.MySqlClient;
 using System;
 
-namespace asp_clinica.NewFolder1
+namespace asp_clinica.Dados
 {
     public class AcoesLogin
     {

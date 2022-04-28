@@ -1,5 +1,5 @@
 ﻿using asp_clinica.Models;
-using asp_clinica.NewFolder1;
+using asp_clinica.Dados;
 using System.Web.Mvc;
 using System.Web.Security;
 
