@@ -37,7 +37,7 @@ namespace asp_clinica.Dados
 
             con.MyDesconectarBD();
         }
-        public void inserirLogin(ModelLogin cmLogin)//Método para cadastrar o Login
+        public void inserirLogin(ModelLogin cmLogin)
         {
             MySqlCommand cmd = new MySqlCommand("insert into tbLogin values (@usuario, @senha, @tipoUsu)", con.MyConectarBD());
             cmd.Parameters.Add("@usuario", MySqlDbType.VarChar).Value = cmLogin.usuario;
