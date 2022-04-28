@@ -167,8 +167,8 @@
     </Compile>
     <Compile Include="Models\ModelLogin.cs" />
     <Compile Include="Models\ModelTipoUser.cs" />
-    <Compile Include="NewFolder1\AcoesLogin.cs" />
-    <Compile Include="NewFolder1\conexao.cs" />
+    <Compile Include="Dados\AcoesLogin.cs" />
+    <Compile Include="Dados\conexao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
