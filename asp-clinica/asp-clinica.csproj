@@ -222,6 +222,8 @@
     <Content Include="Views\Home\ConsCadTipo.cshtml" />
     <Content Include="Views\Home\CadLogin.cshtml" />
     <Content Include="Views\Especialidade\Index.cshtml" />
+    <Content Include="Views\Especialidade\CadEsp.cshtml" />
+    <Content Include="Views\Especialidade\ConsEsp.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
