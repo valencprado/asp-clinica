@@ -28,7 +28,7 @@ codEspecialidade int primary key auto_increment,
 Especialidade varchar(50)
 );
 
-
+select * from tbEspecialidade;
  
 
 create table tbMedico(
