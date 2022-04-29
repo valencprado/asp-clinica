@@ -7,5 +7,8 @@ namespace asp_clinica.Models
 {
     public class ModelEspecialidade
     {
+        public string CodEsp { get; set; }
+        public string Esp { get; set; }
+
     }
 }

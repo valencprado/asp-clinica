@@ -48,3 +48,4 @@ telPaciente varchar(50),
 emailPaciente varchar(50)
 );
 
+
