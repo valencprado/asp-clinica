@@ -161,10 +161,12 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AtendimentoController.cs" />
     <Compile Include="Controllers\EspecialidadeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MedicoController.cs" />
     <Compile Include="Controllers\PacienteController.cs" />
+    <Compile Include="Dados\AcoesAtendimento.cs" />
     <Compile Include="Dados\AcoesEspecialidade.cs" />
     <Compile Include="Dados\AcoesMedico.cs" />
     <Compile Include="Dados\AcoesPaciente.cs" />
@@ -172,6 +174,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ModelAtendimento.cs" />
     <Compile Include="Models\ModelEspecialidade.cs" />
     <Compile Include="Models\ModelLogin.cs" />
     <Compile Include="Models\ModelMedico.cs" />
@@ -224,6 +227,8 @@
     <Content Include="Views\Especialidade\Index.cshtml" />
     <Content Include="Views\Especialidade\CadEsp.cshtml" />
     <Content Include="Views\Especialidade\ConsEsp.cshtml" />
+    <Content Include="Views\Atendimento\Index.cshtml" />
+    <Content Include="Views\Atendimento\CadAtendimento.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
