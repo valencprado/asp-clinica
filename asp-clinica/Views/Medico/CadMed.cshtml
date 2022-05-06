@@ -1,0 +1,21 @@
+﻿@model asp_clinica.Models.ModelMedico
+
+@{
+    ViewBag.Title = "CadMed";
+}
+
+<h2>Cadastro de Médico</h2>
+
+@using (Html.BeginForm("CadMed", "Medico", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.LabelFor(m => m.NomeMedico)
+    <br />
+    @Html.EditorFor(m => m.NomeMedico)
+    <br />
+    @Html.DropDownList("especialidade", "Escolha a especialidade")
+    <br />
+    <br />
+    <input type="submit" value="Cadastrar" />
+}
+
+
