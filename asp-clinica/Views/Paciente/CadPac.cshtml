@@ -1,0 +1,25 @@
+﻿@model asp_clinica.Models.ModelPaciente
+@{
+    ViewBag.Title = "CadPac";
+}
+
+<h2>Cadastro de Paciente</h2>
+@using (Html.BeginForm("CadPac", "Paciente", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.LabelFor(m => m.NomePac)
+    <br />
+    @Html.EditorFor(m => m.NomePac)
+    <br />
+    <br />
+    @Html.LabelFor(m => m.TelPac)
+    <br />
+    @Html.EditorFor(m => m.TelPac)
+    <br />
+    <br />
+    @Html.LabelFor(m => m.EmailPac)
+    <br />
+    @Html.EditorFor(m => m.EmailPac)
+    <br />
+    <br />
+    <input type="submit" value="Cadastrar" />
+}
