@@ -229,11 +229,13 @@
     <Content Include="Views\Especialidade\ConsEsp.cshtml" />
     <Content Include="Views\Atendimento\Index.cshtml" />
     <Content Include="Views\Atendimento\CadAtendimento.cshtml" />
+    <Content Include="Views\Paciente\ConsPac.cshtml" />
+    <Content Include="Views\Paciente\CadPac.cshtml" />
+    <Content Include="Views\Medico\CadMed.cshtml" />
+    <Content Include="Views\Medico\ConsMed.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Medico\" />
-    <Folder Include="Views\Paciente\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
